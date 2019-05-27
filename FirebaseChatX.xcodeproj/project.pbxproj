@@ -16,6 +16,9 @@
 		6917ED80229BCD990045A9BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 6917ED7E229BCD990045A9BD /* LaunchScreen.storyboard */; };
 		6917ED8B229BCD990045A9BD /* FirebaseChatXTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917ED8A229BCD990045A9BD /* FirebaseChatXTests.swift */; };
 		6917ED96229BCD990045A9BD /* FirebaseChatXUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6917ED95229BCD990045A9BD /* FirebaseChatXUITests.swift */; };
+		6917EDA9229BD24D0045A9BD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6917EDA8229BD24D0045A9BD /* .swiftlint.yml */; };
+		6917EDAA229BD24D0045A9BD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6917EDA8229BD24D0045A9BD /* .swiftlint.yml */; };
+		6917EDAB229BD24D0045A9BD /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 6917EDA8229BD24D0045A9BD /* .swiftlint.yml */; };
 		9A9CEF57809FDC2D2FCA2BF2 /* Pods_FirebaseChatX.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4F50EE0A001CC379E0ED4CE6 /* Pods_FirebaseChatX.framework */; };
 /* End PBXBuildFile section */
 
@@ -54,6 +57,7 @@
 		6917ED91229BCD990045A9BD /* FirebaseChatXUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FirebaseChatXUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		6917ED95229BCD990045A9BD /* FirebaseChatXUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirebaseChatXUITests.swift; sourceTree = "<group>"; };
 		6917ED97229BCD990045A9BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6917EDA8229BD24D0045A9BD /* .swiftlint.yml */ = {isa = PBXFileReference; lastKnownFileType = text; path = .swiftlint.yml; sourceTree = "<group>"; };
 		8DC1399007F1146E6595C929 /* Pods-FirebaseChatXUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChatXUITests.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseChatXUITests/Pods-FirebaseChatXUITests.debug.xcconfig"; sourceTree = "<group>"; };
 		8F4DDAA31CD0AE9D5B0A9DB5 /* Pods-FirebaseChatXTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-FirebaseChatXTests.debug.xcconfig"; path = "Target Support Files/Pods-FirebaseChatXTests/Pods-FirebaseChatXTests.debug.xcconfig"; sourceTree = "<group>"; };
 		B25D92D08EF3761B9CE98524 /* Pods_FirebaseChatXUITests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_FirebaseChatXUITests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -99,13 +103,13 @@
 				8DC1399007F1146E6595C929 /* Pods-FirebaseChatXUITests.debug.xcconfig */,
 				1B38D614882E15C620ED188F /* Pods-FirebaseChatXUITests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
 		6917ED69229BCD980045A9BD = {
 			isa = PBXGroup;
 			children = (
+				6917EDA8229BD24D0045A9BD /* .swiftlint.yml */,
 				6917ED74229BCD980045A9BD /* FirebaseChatX */,
 				6917ED89229BCD990045A9BD /* FirebaseChatXTests */,
 				6917ED94229BCD990045A9BD /* FirebaseChatXUITests */,
@@ -178,6 +182,7 @@
 				6917ED6F229BCD980045A9BD /* Frameworks */,
 				6917ED70229BCD980045A9BD /* Resources */,
 				5E773854561DBA063BE4FF66 /* [CP] Embed Pods Frameworks */,
+				6917EDA7229BD1DC0045A9BD /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -274,6 +279,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6917EDA9229BD24D0045A9BD /* .swiftlint.yml in Resources */,
 				6917ED80229BCD990045A9BD /* LaunchScreen.storyboard in Resources */,
 				6917ED7D229BCD990045A9BD /* Assets.xcassets in Resources */,
 				6917ED7B229BCD980045A9BD /* Main.storyboard in Resources */,
@@ -284,6 +290,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6917EDAA229BD24D0045A9BD /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -291,6 +298,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6917EDAB229BD24D0045A9BD /* .swiftlint.yml in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -342,6 +350,23 @@
 			shellPath = /bin/sh;
 			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-FirebaseChatX/Pods-FirebaseChatX-frameworks.sh\"\n";
 			showEnvVarsInLog = 0;
+		};
+		6917EDA7229BD1DC0045A9BD /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\n";
 		};
 		B0AE8D00D86156638BCE083E /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
